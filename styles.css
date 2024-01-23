@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 3px 15px;
+    background-color: #00b50c; /* Blue color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hwb(114 0% 42%); /* Darker blue color on hover */
+}
+
+@media screen and (max-width: 767px) {
+    button {
+        margin-top: 20px; /* Add a top margin for mobile devices */
+    }
+    #imageInput {
+        margin-left: 20px; /* Shift the "Choose File" input towards the right */
+    }
+}
